@@ -1,0 +1,40 @@
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(26, 24, 24);
+    width: 100%;
+    margin: 1px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.page1{ 
+    background-color: rgb(49, 51, 53);
+    color: azure;
+}
+
+.texto{
+    margin-left: 25%;
+    height: 3;
+}
+
+.subtitulo{
+    margin-left: 15%;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: azure;
+}
+
+.flex-container > div {
+    background-color: rgb(26, 24, 24);
+    width: 320px;
+    margin: 1px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    position: relative;
+}

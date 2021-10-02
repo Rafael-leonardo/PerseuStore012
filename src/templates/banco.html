@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../static/css/style.css' rel='stylesheet'>
+    <title>Lista Pessoas:</title>
+</head>
+<body class='page1'>
+    <div class="logo">
+        <div><a href='/' style='text-decoration: none'><font color=white>Home</font></a></div>
+        <div><a href='/' style='text-decoration: none'><font color=white>categorias</font></a></div>
+        <div><a href='/carrinho' style='text-decoration: none'><font color=white>Carrinho</font></a></div>
+        <div><a href='/login' style='text-decoration: none'><font color=white>Login</font></a></div>
+    </div>
+    <div class='flex-container'>
+        <div><a href='/' style='text-decoration: none'><font color=white>Home</font></a></div>
+    </div>
+    <form>    
+        <h1 style='text-align: center;'>Lista de Produtos:</h1>
+        <div style='width: 100%;'>
+            <a href='/add'><font color=white>Adicionar Produtos</font></a>
+            <table style='width: 90%;'>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>foto</th>
+                        <th>nome</th>
+                        <th>preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody style='margin-left: 15px;'>
+                    {% for p in pessoaTable %}
+                        <tr style='text-align: center;'>
+                            <td>{{ p.id }}</td>
+                            <td>{{ p.foto }}</td>
+                            <td>{{ p.nome }}</td>
+                            <td>{{ p.preço }}</td>
+                            <td>
+                                <a href='/edit/{{ p.id }}'>Editar</a>
+                                <a href='/del/{{ p.id }}'>Excluir</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../static/css/style.css' rel='stylesheet'>
+    <title>Novo Produto</title>
+</head>
+<body class='page1'>
+    <div class="logo">
+        <div style="margin-top: 10px;"><a href='/' style='text-decoration: none'><font size='5em' color=white>&nbsp; Perseu Store</font></a></div>
+    </div>
+    <div class='flex-container'>
+        <div><a href='/' style='text-decoration: none'><font color=white>Home</font></a></div>
+        <div><a href='/' style='text-decoration: none'><font color=white>categorias</font></a></div>
+        <div><a href='/carrinho' style='text-decoration: none'><font color=white>Carrinho</font></a></div>
+        <div><a href='/login' style='text-decoration: none'><font color=white>Login</font></a></div>
+    </div>
+    <form action='/add' class='container' method='POST' style:'margin-left: 50%'>    
+        <h1 style='text-align:center'>Novo Produto:</h1>
+        <div class='col-md-6'>
+            <label>Nome:</label>
+            <br>
+            <input type='text' name='nome' id='nome' placeholder='Nome' class='form-control'>            
+        </div>
+        <br>
+        <div class='col-md-6'>
+            <label>E-mail:</label>
+            <br>
+            <input type='email' name='email' id='email' placeholder='E-mail' class='form-control'>            
+        </div>
+        <br>
+        <div class='col-md-6'>
+            <label>Senha:</label>
+            <br>
+            <input type='password' name='senha' id='senha' placeholder='senha' class='form-control'>            
+        </div>
+        <br>
+        <div class='row col-xs-12'>
+            <br>
+            <button type='submit' class='btn btn-block btn-success'>Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
